@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DESIGN AND BUILD FOR HTML EMAIL</title>
+<link rel="stylesheet" type="text/css" href="stylesheet_mod2.css">
+
+<link rel="stylesheet" type="text/css" href="animate.css">
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="script.js" defer></script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <style>
+  #droppable, #droppable1, #droppable2 { text-align: center; vertical-align: middle; width: 147px; height: 30px; margin: 0; }
+  #draggable, #draggable1, #draggable2, #draggable3, #draggable4, #draggable-nonvalid { text-align: center; vertical-align: middle; width: 130px; margin: 8px;}
+  </style>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+
+  var counter=0;
+
+//  var text = document.getElementById("scoreCount").textContent;
+  //$("#scoreCount").textContent(counter);
+
+  $( function() {
+
+    $("#sideImgContainer").show();
+
+    $("#resulttext").hide();
+    $("#result_proceed").hide();
+    $("#result_repeat").hide();
+
+  //  $("#optionQ1").show();
+
+    $("#sideImg1").show();
+    $("#sideImg2").hide();
+    $("#sideImg3").hide();
+    $("#sideImg4").hide();
+    $("#sideImg5").hide();
+    $("#sideImg6").hide();
+
+    $("#ques1").show();
+    $("#ques2").hide();
+    $("#ques3").hide();
+    $("#ques4").hide();
+//    $("#optionQ3").hide();
+//    $("#optionQ4").hide();
+
+    $("#option3").hide();
+    $("#option4").hide();
+    $("#option5").hide();
+    $("#option6").hide();
+    $("#option7").hide();
+    $("#option8").hide();
+
+    $("#optionResponseCorrect1").hide();
+    $("#optionResponseCorrect2").hide();
+    $("#optionResponseCorrect3").hide();
+    $("#optionResponseCorrect4").hide();
+    $("#optionResponseIncorrect1").hide();
+    $("#optionResponseIncorrect2").hide();
+    $("#optionResponseIncorrect3").hide();
+    $("#optionResponseIncorrect4").hide();
+
+    $("#outerbuttonLinks1").hide();
+    $("#outerbuttonLinks2").hide();
+    $("#outerbuttonLinks3").hide();
+    $("#outerbuttonLinks4").hide();
+    $("#buttonLinksQuiz").hide();
+
+    $("#option1").click(function(){
+      counter++;
+      console.log(counter);
+      $("#sideImg2").show();
+      $("#option1").hide();
+      $("#option2").hide();
+      $("#optionResponseCorrect1").show();
+      $("#optionResponseIncorrect1").hide();
+      $("#outerbuttonLinks1").show();
+    });
+
+    $("#option2").click(function(){
+      $("#sideImg2").show();
+      $("#option1").hide();
+      $("#option2").hide();
+      $("#optionResponseIncorrect1").show();
+      $("#optionResponseCorrect1").hide();
+      $("#outerbuttonLinks1").show();
+    });
+
+    $("#option3").click(function(){
+      $("#sideImg3").show();
+      $("#option4").hide();
+      $("#option3").hide();
+      $("#optionResponseCorrect2").hide();
+      $("#optionResponseIncorrect2").show();
+      $("#outerbuttonLinks2").show();
+    });
+
+    $("#option4").click(function(){
+      counter++;
+      console.log(counter);
+      $("#sideImg3").show();
+      $("#option3").hide();
+      $("#option4").hide();
+      $("#optionResponseIncorrect2").hide();
+      $("#optionResponseCorrect2").show();
+      $("#outerbuttonLinks2").show();
+    });
+
+    $("#option5").click(function(){
+      $("#sideImg4").show();
+      $("#option6").hide();
+      $("#option5").hide();
+      $("#optionResponseCorrect3").hide();
+      $("#optionResponseIncorrect3").show();
+      $("#outerbuttonLinks3").show();
+    });
+
+    $("#option6").click(function(){
+      counter++;
+      console.log(counter);
+      $("#sideImg4").show();
+      $("#option5").hide();
+      $("#option6").hide();
+      $("#optionResponseIncorrect3").hide();
+      $("#optionResponseCorrect3").show();
+      $("#outerbuttonLinks3").show();
+    });
+
+    $("#option7").click(function(){
+      counter++;
+      console.log(counter);
+      $("#sideImg6").show();
+      $("#option8").hide();
+      $("#option7").hide();
+      $("#optionResponseCorrect4").show();
+      $("#optionResponseIncorrect4").hide();
+      $("#outerbuttonLinks4").show();
+    });
+
+    $("#option8").click(function(){
+      $("#sideImg6").show();
+      $("#option7").hide();
+      $("#option8").hide();
+      $("#optionResponseIncorrect4").show();
+      $("#optionResponseCorrect4").hide();
+      $("#outerbuttonLinks4").show();
+    });
+
+    $("#outerbuttonLinks1").click(function(){
+      $("#ques1").hide();
+      $("#ques2").show();
+      $("#option1").hide();
+      $("#option2").hide();
+      $("#option3").show();
+      $("#option4").show();
+      $("#optionResponseIncorrect1").hide();
+      $("#optionResponseCorrect1").hide();
+      $("#outerbuttonLinks1").hide();
+      $("#outerbuttonLinks2").hide();
+//      $("#buttonLinks").hide();
+    });
+
+    $("#outerbuttonLinks2").click(function(){
+      $("#ques1").hide();
+      $("#ques2").hide();
+      $("#ques3").show();
+      $("#option1").hide();
+      $("#option2").hide();
+      $("#option3").hide();
+      $("#option4").hide();
+      $("#option5").show();
+      $("#option6").show();
+      $("#optionResponseIncorrect2").hide();
+      $("#optionResponseCorrect2").hide();
+      $("#outerbuttonLinks1").hide();
+      $("#outerbuttonLinks2").hide();
+      $("#outerbuttonLinks3").hide();
+  //    $("#buttonLinks").hide();
+    });
+
+    $("#outerbuttonLinks3").click(function(){
+      $("#ques1").hide();
+      $("#ques2").hide();
+      $("#ques3").hide();
+      $("#ques4").show();
+      $("#option1").hide();
+      $("#option2").hide();
+      $("#option3").hide();
+      $("#option4").hide();
+      $("#option5").hide();
+      $("#option6").hide();
+      $("#option7").show();
+      $("#option8").show();
+      $("#optionResponseIncorrect3").hide();
+      $("#optionResponseCorrect3").hide();
+      $("#outerbuttonLinks1").hide();
+      $("#outerbuttonLinks2").hide();
+      $("#outerbuttonLinks3").hide();
+      $("#sideImg5").show();
+  //    $("#buttonLinks").hide();
+    });
+
+    $("#outerbuttonLinks4").click(function(){
+      $("#ques1").hide();
+      $("#ques2").hide();
+      $("#ques3").hide();
+      $("#ques4").hide();
+      $("#option1").hide();
+      $("#option2").hide();
+      $("#option3").hide();
+      $("#option4").hide();
+      $("#option5").hide();
+      $("#option6").hide();
+      $("#option7").hide();
+      $("#option8").hide();
+      $("#optionResponseIncorrect4").hide();
+      $("#optionResponseCorrect4").hide();
+      $("#outerbuttonLinks1").hide();
+      $("#outerbuttonLinks2").hide();
+      $("#outerbuttonLinks3").hide();
+      $("#outerbuttonLinks4").hide();
+      $("#resulttext").show();
+      $("#buttonLinksQuiz").show();
+  //    $("#buttonLinks").hide();
+
+          if(counter >= 3){
+            $("#result_proceed").show();
+            $("#result_repeat").hide();
+          }
+
+          if(counter < 3){
+            $("#result_proceed").hide();
+            $("#result_repeat").show();
+            $("#proceedBtn").hide();
+          }
+
+    });
+
+
+
+
+
+    // close original function
+  } );
+
+
+
+
+
+  </script>
+
+
+</head>
+
+<body>
+
+
+<div id="header_bar">
+
+
+<div id="title_icon"><a href="index.html"><img src="Images/ScreenLayoutImages/title_icon.png"></a></div>
+
+<div id="title_text">Design And Build For HTML Email</div>
+
+
+<div id="print_icon">
+<a href="" onclick="myFunction()">
+<img src="Images/ScreenLayoutImages/print_icon.png">
+</a>
+</div>
+
+<div id="logo_image"><a href="https://www.poppulo.com/" target="_blank"><img src="Images/ScreenLayoutImages/logo_image.png"></a></div>
+
+
+</div>
+
+
+
+<div id="side_bar">
+
+<a href="index.html"><div id="home_btn"><img src="Images/Buttons/home_btn_yes.png" onmouseover="this.src='Images/Buttons/home_btn_over.png'" onmouseout="this.src='Images/Buttons/home_btn_yes.png'" onmousedown="this.src='Images/Buttons/home_btn_on.png'" /></div></a>
+
+<div id="about_btn"><a href="about.html"><img id="myImage" src="Images/Buttons/about_btn_off.png"
+onmouseover="this.src='Images/Buttons/about_btn_over.png'"
+onmouseout="this.src='Images/Buttons/about_btn_off.png'"
+onmousedown="this.src='Images/Buttons/about_btn_on.png'" /></a></div>
+
+<div id="lessons_btn"><a href="lessons.html"><img id="myImage" src="Images/Buttons/lessons_btn_off.png"
+onmouseover="this.src='Images/Buttons/lessons_btn_over.png'"
+onmouseout="this.src='Images/Buttons/lessons_btn_off.png'"
+onmousedown="this.src='Images/Buttons/lessons_btn_on.png'" /></a></div>
+
+<div id="glossary_btn"><a href="glossary.html"><img id="myImage" src="Images/Buttons/glossary_btn_off.png"
+onmouseover="this.src='Images/Buttons/glossary_btn_over.png'"
+onmouseout="this.src='Images/Buttons/glossary_btn_off.png'"
+onmousedown="this.src='Images/Buttons/glossary_btn_on.png'" /></a></div>
+
+</div>
+
+
+<div id="exit_btn" onclick="exitFunction()"><img id="myImage" src="Images/Buttons/exit_btn_yes.png"
+onmouseover="this.src='Images/Buttons/exit_btn_over.png'"
+onmouseout="this.src='Images/Buttons/exit_btn_yes.png'" /></div>
+
+
+
+
+<div id="breadcrumb_bar">
+
+<div id="breadcrumb_start"><img src="Images/ScreenLayoutImages/breadcrumb_start.png"></div>
+
+<div id="module_name"><b>MODULE:</b><br/><a href="module3_intro.html">Email Content Management</a></div>
+
+<div id="breadcrumb_between_a"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="unit_name_a"><b>UNIT ONE:</b><br/><a href="unit5_lesson1_slide1.html">Optimising Content for Email</a></div>
+
+<div id="breadcrumb_between2_a"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="lesson_name_a"><b>ASSESSMENT:</b><br/><a href="unit5_assess1.html">Assess your knowledge of 'Optimising Content for Email'</a></div>
+
+
+</div>
+
+<div id="intro_objectives2">
+  <h1>Unit 1: Quiz</h1>
+  <h2>Scenario: A/B testing your email</h2>
+
+
+
+<div id="optionQ1">
+
+      <div id="ques1"><br/><br/><br/>
+            <b>You want to send an email and you decide to do an A/B test.
+        What is the first step?</b>
+      </div>
+
+        <br/>
+
+        <div id="option1">
+        Copy your email and change one variable in the content.
+        </div>
+        <div id="option2">
+        Copy your email and change multiple variables in the content.
+        </div>
+
+        <div id="optionResponseCorrect1">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="optionIcon"><img src="Quiz/right_response.png"></td>
+              <td><b>Correct!</b> It's easier to measure the impact of changing one variable in your email.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="optionResponseIncorrect1">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="optionIcon"><img src="Quiz/wrong_response.png"></td>
+              <td><b>Incorrect.</b> It's easier to measure the impact of changing one variable in your email.</td>
+            </tr>
+          </table>
+       </div>
+
+
+ <div id="optionQ2">
+
+              <div id="ques2"><br/><br/>
+                    <b>You want to improve the open rate for your email campaign. Which one of the following should you do?</b>
+              </div>
+
+                <br/>
+                <div id="option3">
+                Write different body content for each of your emails.
+                </div>
+                <div id="option4">
+                Write a different subject line for each of your emails.
+                </div>
+
+                <div id="optionResponseCorrect2">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td class="optionIcon"><img src="Quiz/right_response.png"></td>
+                      <td><b>Correct!</b> If you want to improve open rates you should focus on the email subject line.</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div id="optionResponseIncorrect2">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td class="optionIcon"><img src="Quiz/wrong_response.png"></td>
+                      <td><b>Incorrect.</b> If you want to improve open rates you should focus on the email subject line.</td>
+                    </tr>
+                  </table>
+                </div>
+
+    </div>
+
+
+     <div id="optionQ3">
+
+                  <div id="ques3"><br/>
+                        <b>You&apos;re ready to send your email, who do send each email to?</b>
+                  </div>
+
+                    <br/>
+                    <div id="option5">
+                    Send both emails to all subscribers on your mailing list, you want them to receive both versions of the email.
+                    </div>
+                    <div id="option6">
+                    Select a smaller sample of your mailing and divide it into two subscriber groups. Each subscriber group should receive a different version of the email.
+                    </div>
+
+                    <div id="optionResponseCorrect3">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="optionIcon"><img src="Quiz/right_response.png"></td>
+                          <td><b>Correct!</b> You are sending your A and B email versions to seperate subscriber groups. Each subscriber should only receive one version of the email.</td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <div id="optionResponseIncorrect3">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="optionIcon"><img src="Quiz/wrong_response.png"></td>
+                          <td><b>Incorrect.</b> You are sending your A and B email versions to seperate subscriber groups. Each subscriber should only receive one version of the email.</td>
+                        </tr>
+                      </table>
+                    </div>
+
+        </div>
+
+        <div id="optionQ4">
+
+                     <div id="ques4">
+                           <b>Email A has a 39% open rate and email B had a 37% open rate. What do you do next?</b>
+                     </div>
+
+                       <br/>
+                       <div id="option7">
+                       I send email A with the more effective subject line out to all remaining subscribers.
+                       </div>
+                       <div id="option8">
+                       I conduct another A/B test to see if I can generate more substantial differences in open rates.
+                       </div>
+
+                       <div id="optionResponseCorrect4">
+                         <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                           <tr>
+                             <td class="optionIcon"><img src="Quiz/right_response.png"></td>
+                             <td><b>Correct!</b> Send email A with the slightly better open rate. You can't expect to always see considerable differences between your A/B tests. Your goal is multiple small improvements over a longer period of time.</td>
+                           </tr>
+                         </table>
+                       </div>
+
+                       <div id="optionResponseIncorrect4">
+                         <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                           <tr>
+                             <td class="optionIcon"><img src="Quiz/wrong_response.png"></td>
+                             <td><b>Incorrect.</b> Send email A with the slightly better open rate. You can't expect to always see considerable differences between your A/B tests. Your goal is multiple small improvements over a longer period of time.</td>
+                           </tr>
+                         </table>
+                       </div>
+
+           </div>
+
+           <div id="resulttext">
+             You completed<br/>
+             <span style="font-size: 54px; font-weight: bold;">
+               <span id="scoreCount"></span>/4
+             </span>
+             <br/>steps correctly.
+           </div>
+
+           <div id="result_proceed"><br/><br/><br/>Well done! You can proceed to the next lesson where you will begin
+                                    learning about testing platforms for HTML email.</div>
+
+           <div id="result_repeat"><br/><br/><br/>You need to score at least 3 out of 4 to proceed to the next unit. <br/><br/>
+                                    Click on the 'Retake Quiz' button below.</div>
+
+
+
+    <div id="outerbuttonLinks1">
+           <div id="buttonLinks"><img src="Images/Buttons/next_btn.jpg"></div>
+      </div>
+
+      <div id="outerbuttonLinks2">
+           <div id="buttonLinks"><img src="Images/Buttons/next_btn.jpg"></div>
+      </div>
+
+      <div id="outerbuttonLinks3">
+           <div id="buttonLinks"><img src="Images/Buttons/next_btn.jpg"></div>
+      </div>
+
+      <div id="outerbuttonLinks4" onclick="finalScore();">
+           <div id="buttonLinks"><img src="Images/Buttons/next_btn.jpg"></div>
+      </div>
+
+      <div id="buttonLinksQuiz">
+        <a href="unit5_assess5.html"><img src="Images/Buttons/retake_quiz_btn.jpg"></a>
+          <span> &nbsp; &nbsp; &nbsp;</span>
+        <a id="proceedBtn" href="module3_summary.html"><img src="Images/Buttons/next_unit_btn.jpg"></a>
+      </div>
+
+
+    <div id="sideImgContainer" width="500px">
+
+          <div id="sideImg1">
+          <img src="Quiz/Unit5/ab_img1.jpg">
+          </div>
+
+          <div id="sideImg2">
+          <img src="Quiz/Unit5/ab_img2.jpg">
+          </div>
+
+          <div id="sideImg3">
+          <img src="Quiz/Unit5/ab_img3.jpg">
+          </div>
+
+          <div id="sideImg4">
+          <img src="Quiz/Unit5/ab_img4.jpg">
+          </div>
+
+          <div id="sideImg5">
+          <img src="Quiz/Unit5/ab_img5.jpg">
+          </div>
+
+          <div id="sideImg6">
+          <img src="Quiz/Unit5/ab_img6.jpg">
+          </div>
+
+    </div>
+
+    <div id="linebox">UNIT 2 ASSESSMENT: SCREEN 5 OF 5
+        <span class="page_bullets" style="font-size: 20px !important; text-align: right;">
+              &nbsp;
+              <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+              <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+              <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+              <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+              <img src="Images/ScreenLayoutImages/dot_active.jpg">
+        </span>
+    </div>
+
+
+
+</div>
+
+
+
+<script type="text/javascript">
+
+function finalScore(){
+  document.getElementById("scoreCount").innerHTML = counter;
+}
+
+// Print Window Option
+function myFunction() {
+    window.print();
+  }
+
+// Exit Browser Window Option
+function exitFunction() {
+  var txt;
+  var r = confirm("Do you wish to exit this course? \nThis will close the browser window.")
+  if (r == true) {
+      txt = "You pressed OK!";
+      window.open('','_parent','');
+      window.close();
+  } else {
+      txt = "You pressed Cancel!";
+  }
+
+}
+
+</script>
+
+
+</body>
+
+</html>

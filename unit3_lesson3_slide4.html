@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DESIGN AND BUILD FOR HTML EMAIL</title>
+<link rel="stylesheet" type="text/css" href="stylesheet_mod2.css">
+
+<link rel="stylesheet" type="text/css" href="animate.css">
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+
+
+<div id="header_bar">
+
+
+<div id="title_icon"><a href="index.html"><img src="Images/ScreenLayoutImages/title_icon.png"></a></div>
+
+<div id="title_text">Design And Build For HTML Email</div>
+
+<div id="download_icon">
+  <a href="Downloads/LessonScreens/U3_L3_S4.jpg" download>
+  <img src="Images/ScreenLayoutImages/download_icon.png">
+</a>
+</div>
+
+<div id="print_icon">
+<a href="" onclick="myFunction()">
+<img src="Images/ScreenLayoutImages/print_icon.png">
+</a>
+</div>
+
+<div id="logo_image"><img src="Images/ScreenLayoutImages/logo_image.png"></div>
+
+
+</div>
+
+
+
+<div id="side_bar">
+
+<a href="index.html"><div id="home_btn"><img src="Images/Buttons/home_btn_yes.png" onmouseover="this.src='Images/Buttons/home_btn_over.png'" onmouseout="this.src='Images/Buttons/home_btn_yes.png'" onmousedown="this.src='Images/Buttons/home_btn_on.png'" /></div></a>
+
+<div id="about_btn"><a href="about.html"><img id="myImage" src="Images/Buttons/about_btn_off.png"
+onmouseover="this.src='Images/Buttons/about_btn_over.png'"
+onmouseout="this.src='Images/Buttons/about_btn_off.png'"
+onmousedown="this.src='Images/Buttons/about_btn_on.png'" /></a></div>
+
+<div id="lessons_btn"><a href="lessons.html"><img id="myImage" src="Images/Buttons/lessons_btn_off.png"
+onmouseover="this.src='Images/Buttons/lessons_btn_over.png'"
+onmouseout="this.src='Images/Buttons/lessons_btn_off.png'"
+onmousedown="this.src='Images/Buttons/lessons_btn_on.png'" /></a></div>
+
+<div id="glossary_btn"><a href="glossary.html"><img id="myImage" src="Images/Buttons/glossary_btn_off.png"
+onmouseover="this.src='Images/Buttons/glossary_btn_over.png'"
+onmouseout="this.src='Images/Buttons/glossary_btn_off.png'"
+onmousedown="this.src='Images/Buttons/glossary_btn_on.png'" /></a></div>
+
+</div>
+
+<div id="exit_btn" onclick="exitFunction()"><img id="myImage" src="Images/Buttons/exit_btn_yes.png"
+onmouseover="this.src='Images/Buttons/exit_btn_over.png'"
+onmouseout="this.src='Images/Buttons/exit_btn_yes.png'" /></div>
+
+
+<div id="breadcrumb_bar">
+
+<div id="breadcrumb_start"><img src="Images/ScreenLayoutImages/breadcrumb_start.png"></div>
+
+<div id="module_name"><b>MODULE:</b><br/><a href="module2_intro.html">Design Guidelines</a></div>
+
+<div id="breadcrumb_between"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="unit_name"><b>UNIT ONE:</b><br/><a href="unit3_lesson1_slide1.html">Best-practice design for HTML Email</a></div>
+
+<div id="breadcrumb_between2"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="lesson_name"><b>LESSON THREE:</b><br/><a href="unit3_lesson3_slide1.html">Design Call Communications</a></div>
+
+</div>
+
+<div id="intro_objectives2">
+  <h1>Lesson 3: Design Call Communications</h1>
+  <h2>Common Customer Questions</h2>
+  Select an appropriate response to the customer's question. This is <u>not</u> a quiz,<br/>
+  and you can <b>click on each potential answer to see all possible feedback.</b>
+  <br/><br/>
+
+  <table id="customerAnswers" class="module1 animated slideInRight" width="500px" border="0" cellpadding="5" cellspacing="0">
+    <tr>
+      <td>
+
+        <div id="icon1" onclick="Q_1A()" id="1A">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="letterCell"><b>A.</b> </td>
+              <td>Once a template is approved, it must be built and then tested. The turnaround time of five to seven working days
+                 was clearly stated at the beginning of the design process.</td>
+        </tr>
+      </table>
+        </div>
+
+        <div id="icon2" onclick="Q_1B()" id="1B">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="letterCell"><b>B.</b></td>
+              <td>
+                Once a template is approved, it must be built and then tested. This process takes five to seven working days
+                  to complete. It is essential to complete thorough testing across all
+                  email clients to ensure that your template is free of rendering
+                  issues.
+        </td>
+      </tr>
+    </table>
+        </div>
+
+
+        <div id="icon3" onclick="Q_1C()" id="1C">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="letterCell"><b>C.</b></td>
+              <td>Once a template is approved, it must be built and then tested. We'll do our best to deliver the
+                template as quickly as possible.</td>
+        </tr>
+      </table>
+        </div>
+
+
+      </td>
+
+    </tr>
+  </table>
+
+
+
+  <table id="Answer_Right1" width="600px" border="0" cellpadding="5" cellspacing="0">
+    <tr>
+      <td class="iconCell"><img src="Quiz/right_response.png" width="95px" height="95px"></td>
+      <td class="textCell">
+        This answer is correct. It clearly states the turnaround time required to build and
+        test the template, and explains why this turnaround time is needed.
+       </td>
+    </tr>
+  </table>
+
+  <table id="Answer_OK1" width="600px" border="0" cellpadding="5" cellspacing="0">
+    <tr>
+      <td class="iconCell"><img src="Quiz/ok_response.png" width="95px" height="95px"></td>
+      <td class="textCell">
+        This answer is accurate, but unnecessarily confrontational as a first
+        response. <br/><br/>If a customer responds negatively to the stated turnaround
+      times and your justification for them, then it is acceptable to politely
+      remind them that these timelines were stated at the very beginning of the design process.
+      </thead></td>
+    </tr>
+  </table>
+
+  <table id="Answer_Wrong1" width="600px" border="0" cellpadding="5" cellspacing="0">
+    <tr>
+      <td class="iconCell"><img src="Quiz/wrong_response.png" width="95px" height="95px"></td>
+      <td class="textCell">
+        This answer is not appropriate. It has an apologetic tone, and suggests
+        that the customer was not provided with all timelines at the beginning of
+        the design process.
+        <br/><br/>
+        By stating that you will build the template &quot;as quickly as
+        possible&quot;, you encourage frequent emails from the customer regarding
+        your progress. Be very clear about your expected turnaround time.
+    </tr>
+  </table>
+
+
+
+  <div id="buttonLinks">
+    <a href="unit3_lesson3_slide3.html"><img src="Images/Buttons/prev_btn.jpg"></a>
+      &nbsp;&nbsp;&nbsp;
+    <a href="unit3_lesson3_slide5.html"><img src="Images/Buttons/next_btn.jpg"></a>
+    </div>
+
+
+<div id="linebox">LESSON 3: SCREEN 4 OF 5
+  <span class="page_bullets" style="font-size: 20px !important; text-align: right;">
+    &nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_active.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">
+  </span>
+</div>
+
+
+
+</div>
+
+<div id="characterbox">
+  <img src="Images/ScreenLayoutImages/character_customer.png">
+</div>
+
+<div id="speechbubble">
+  <img src="Images/ScreenLayoutImages/speech_bubble.png">
+</div>
+
+
+
+<div id="customerQues">
+
+</div>
+
+
+<script type="text/javascript">
+
+var buttonLinks=document.getElementById("buttonLinks");
+var speechbubble=document.getElementById("speechbubble");
+var callIcon=document.getElementById("callIcon");
+var customerQues=document.getElementById("customerQues");
+
+var answer1=document.getElementById("icon1");
+var answer2=document.getElementById("icon2");
+var answer3=document.getElementById("icon3");
+
+var answerRight1 = document.getElementById("Answer_Right1");
+var answerOK1 = document.getElementById("Answer_OK1");
+var answerWrong1 = document.getElementById("Answer_Wrong1");
+
+answerRight1.style.display = 'none';
+answerOK1.style.display = 'none';
+answerWrong1.style.display = 'none';
+
+customerQues.innerHTML = "Can you upload the design to our account once it's approved? We need it as soon as possible, we're on a tight deadline.";
+
+buttonLinks.style.display = 'none';
+speechbubble.style.display = 'block';
+callIcon.style.display = 'none';
+
+function Q_1A() {
+  buttonLinks.style.display = 'block';
+  answerWrong1.style.display = 'none';
+  answerRight1.style.display = 'none';
+  answerOK1.style.display = 'block';
+  answer1.style.backgroundColor = '#C8C4FF';
+  answer2.style.backgroundColor = '#DDDDDD';
+  answer3.style.backgroundColor = '#DDDDDD';
+}
+
+function Q_1B() {
+  buttonLinks.style.display = 'block';
+  answerWrong1.style.display = 'none';
+  answerRight1.style.display = 'block';
+  answerOK1.style.display = 'none';
+  answer1.style.backgroundColor = '#DDDDDD';
+  answer2.style.backgroundColor = '#C8C4FF';
+  answer3.style.backgroundColor = '#DDDDDD';
+}
+
+function Q_1C() {
+  buttonLinks.style.display = 'block';
+  answerOK1.style.display = 'none';
+  answerWrong1.style.display = 'block';
+  answerRight1.style.display = 'none';
+  answer1.style.backgroundColor = '#DDDDDD';
+  answer2.style.backgroundColor = '#DDDDDD';
+  answer3.style.backgroundColor = '#C8C4FF';
+}
+
+
+
+
+// Print Window Option
+function myFunction() {
+    window.print();
+  }
+
+// Exit Browser Window Option
+function exitFunction() {
+  var txt;
+  var r = confirm("Do you wish to exit this course? \nThis will close the browser window.")
+  if (r == true) {
+      txt = "You pressed OK!";
+      window.open('','_parent','');
+      window.close();
+  } else {
+      txt = "You pressed Cancel!";
+  }
+
+}
+
+</script>
+
+
+</body>
+
+</html>

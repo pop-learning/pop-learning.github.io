@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>DESIGN AND BUILD FOR HTML EMAIL</title>
+
+<script>
+  !window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+</script>
+
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+
+<link rel="stylesheet" type="text/css" href="stylesheet_mod2.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+
+</head>
+
+
+<body>
+
+<div id="header_bar">
+
+
+<div id="title_icon"><a href="index.html"><img src="Images/ScreenLayoutImages/title_icon.png"></a></div>
+
+<div id="title_text">Design And Build For HTML Email</div>
+
+<div id="download_icon">
+  <a href="Downloads/LessonScreens/U3_L1_S7.jpg" download>
+  <img src="Images/ScreenLayoutImages/download_icon.png">
+</a>
+</div>
+
+<div id="print_icon">
+<a href="" onclick="myFunction()">
+<img src="Images/ScreenLayoutImages/print_icon.png">
+</a>
+</div>
+
+<div id="logo_image"><a href="https://www.poppulo.com/" target="_blank"><img src="Images/ScreenLayoutImages/logo_image.png"></a></div>
+
+
+</div>
+
+
+
+<div id="side_bar">
+
+<a href="index.html"><div id="home_btn"><img src="Images/Buttons/home_btn_yes.png" onmouseover="this.src='Images/Buttons/home_btn_over.png'" onmouseout="this.src='Images/Buttons/home_btn_yes.png'" onmousedown="this.src='Images/Buttons/home_btn_on.png'" /></div></a>
+
+<div id="about_btn"><a href="about.html"><img id="myImage" src="Images/Buttons/about_btn_off.png"
+onmouseover="this.src='Images/Buttons/about_btn_over.png'"
+onmouseout="this.src='Images/Buttons/about_btn_off.png'"
+onmousedown="this.src='Images/Buttons/about_btn_on.png'" /></a></div>
+
+<div id="lessons_btn"><a href="lessons.html"><img id="myImage" src="Images/Buttons/lessons_btn_off.png"
+onmouseover="this.src='Images/Buttons/lessons_btn_over.png'"
+onmouseout="this.src='Images/Buttons/lessons_btn_off.png'"
+onmousedown="this.src='Images/Buttons/lessons_btn_on.png'" /></a></div>
+
+<div id="glossary_btn"><a href="glossary.html"><img id="myImage" src="Images/Buttons/glossary_btn_off.png"
+onmouseover="this.src='Images/Buttons/glossary_btn_over.png'"
+onmouseout="this.src='Images/Buttons/glossary_btn_off.png'"
+onmousedown="this.src='Images/Buttons/glossary_btn_on.png'" /></a></div>
+
+</div>
+
+<div id="exit_btn" onclick="exitFunction()"><img id="myImage" src="Images/Buttons/exit_btn_yes.png"
+onmouseover="this.src='Images/Buttons/exit_btn_over.png'"
+onmouseout="this.src='Images/Buttons/exit_btn_yes.png'" /></div>
+
+
+<div id="breadcrumb_bar">
+
+<div id="breadcrumb_start"><img src="Images/ScreenLayoutImages/breadcrumb_start.png"></div>
+
+<div id="module_name"><b>MODULE:</b><br/><a href="module2_intro.html">Design Guidelines</a></div>
+
+<div id="breadcrumb_between"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="unit_name"><b>UNIT ONE:</b><br/><a href="unit3_lesson1_slide1.html">Best-practice design for HTML Email</a></div>
+
+<div id="breadcrumb_between2"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="lesson_name"><b>LESSON ONE:</b><br/><a href="unit3_lesson1_slide1.html">Principles of good design</a></div>
+
+</div>
+
+<div id="intro_600px">
+
+  <h1>Principles of Good Design</h1>
+  <h2>Balance</h2>
+  <br/>
+  <i>&quot;A balanced composition feels right. It feels stable and
+  aesthetically pleasing. While some of its elements might be focal
+  points and attract your eye, no one area of the composition draws
+  your eye so much that you can&apos;t see the other areas.&quot;</i>
+  <br/><br/>
+  There are different types of balance:
+  <br/><br/>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><div id="title1" onclick="show1()"><b>Symmetrical <br/>balance</b></div></td>
+      <td><div id="title2" onclick="show2()"><b>Asymmetrical <br/>balance</b></div></td>
+      <td><div id="title3" onclick="show3()"><b>Radial <br/>balance</b></div></td>
+      <td><div id="title4" onclick="show4()"><b>Mosaic <br/>balance</b></div></td>
+    </tr>
+  </table>
+  <div id="balance1">
+  <b>Symmetrical balance:</b> Equal weight on equal sides of a design. The
+  two sides mirror one another. This is not the most visually
+  intriguing form of balance as it is rather predictable and suggests
+  a tone of formality.
+  </div>
+
+  <div id="balance2">
+  <b>Asymmetrical balance:</b> A number of small objects can balance out one
+  larger object. One side of the design contains a visually heavier
+  element, which is balanced by a number of visually lighter elements
+  on the other side. Asymmetrical balance offers more visual variety.
+  </div>
+
+  <div id="balance3">
+  <b>Radial balance:</b> When elements in the design radiate from a common
+  centre point, e.g. rays of sunlight for example. Radial balance
+  draws your eye toward the center point. It is difficult to achieve
+  in email, as the layering of content over background images is not
+  supported. Radial balance is more suited to custom graphics.
+  </div>
+
+  <div id="balance4">
+  <b>Mosaic balance:</b> When a design lacks clear focal points, and the
+  design elements share an equal emphasis. It is about the balance of
+  repetition. Repeating elements of equal weight throughout the design
+  creates a sense of balance.
+  </div>
+
+
+<div id="contentArea_550">
+
+  <div id="balanceExample">
+
+    <div id="balanceImg1">
+    <img src="Images/LessonContent/balance1.png">
+    <br/><br/>
+    <img src="Images/LessonContent/balance1b.jpg">
+    </div>
+
+    <div id="balanceImg2">
+    <img src="Images/LessonContent/balance2.png">
+    <br/><br/>
+    <img src="Images/LessonContent/balance2b.jpg">
+    </div>
+
+    <div id="balanceImg3">
+    <img src="Images/LessonContent/balance3.png">
+    <br/><br/>
+    <img src="Images/LessonContent/balance3b.jpg">
+    </div>
+
+    <div id="balanceImg4">
+    <img src="Images/LessonContent/balance4.png">
+    <br/><br/>
+    <img src="Images/LessonContent/balance4b.jpg">
+    </div>
+
+
+  </div>
+
+  </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+<div id="buttonLinks">
+  <a href="unit3_lesson1_slide6.html"><img src="Images/Buttons/prev_btn.jpg"></a>
+    &nbsp;&nbsp;&nbsp;
+  <a href="unit3_lesson2_slide1.html"><img src="Images/Buttons/next_lesson_btn.jpg"></a>
+  </div>
+
+
+
+
+
+
+<div id="linebox">LESSON 1: SCREEN 7 OF 7
+  <span class="page_bullets" style="font-size: 20px !important; text-align: right;">
+    &nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_active.jpg">&nbsp;
+  </span>
+</div>
+
+
+
+<script type="text/javascript">
+
+var title1 = document.getElementById("title1");
+var title2 = document.getElementById("title2");
+var title3 = document.getElementById("title3");
+var title4 = document.getElementById("title4");
+
+var balance1 = document.getElementById("balance1");
+var balance2 = document.getElementById("balance2");
+var balance3 = document.getElementById("balance3");
+var balance4 = document.getElementById("balance4");
+
+var balanceImg1 = document.getElementById("balanceImg1");
+var balanceImg2 = document.getElementById("balanceImg2");
+var balanceImg3 = document.getElementById("balanceImg3");
+var balanceImg4 = document.getElementById("balanceImg4");
+
+balance2.style.display = 'none';
+balance3.style.display = 'none';
+balance4.style.display = 'none';
+balanceImg2.style.display = 'none';
+balanceImg3.style.display = 'none';
+balanceImg4.style.display = 'none';
+
+title1.style.backgroundColor = '#EEEEEE';
+balance1.style.backgroundColor = '#EEEEEE';
+
+function show1() {
+   balance1.style.display = 'block';
+   balance2.style.display = 'none';
+   balance3.style.display = 'none';
+   balance4.style.display = 'none';
+   title1.style.backgroundColor = '#EEEEEE';
+   title2.style.backgroundColor = '#FFFFFF';
+   title3.style.backgroundColor = '#FFFFFF';
+   title4.style.backgroundColor = '#FFFFFF';
+   balance1.style.backgroundColor = '#EEEEEE';
+   balanceImg1.style.display = 'block';
+   balanceImg2.style.display = 'none';
+   balanceImg3.style.display = 'none';
+   balanceImg4.style.display = 'none';
+}
+
+function show2() {
+   balance1.style.display = 'none';
+   balance2.style.display = 'block';
+   balance3.style.display = 'none';
+   balance4.style.display = 'none';
+   title1.style.backgroundColor = '#FFFFFF';
+   title2.style.backgroundColor = '#EEEEEE';
+   title3.style.backgroundColor = '#FFFFFF';
+   title4.style.backgroundColor = '#FFFFFF';
+   balance2.style.backgroundColor = '#EEEEEE';
+   balanceImg1.style.display = 'none';
+   balanceImg2.style.display = 'block';
+   balanceImg3.style.display = 'none';
+   balanceImg4.style.display = 'none';
+}
+
+function show3() {
+   balance1.style.display = 'none';
+   balance2.style.display = 'none';
+   balance3.style.display = 'block';
+   balance4.style.display = 'none';
+   title1.style.backgroundColor = '#FFFFFF';
+   title2.style.backgroundColor = '#FFFFFF';
+   title3.style.backgroundColor = '#EEEEEE';
+   title4.style.backgroundColor = '#FFFFFF';
+   balance3.style.backgroundColor = '#EEEEEE';
+   balanceImg1.style.display = 'none';
+   balanceImg2.style.display = 'none';
+   balanceImg3.style.display = 'block';
+   balanceImg4.style.display = 'none';
+}
+
+function show4() {
+   balance1.style.display = 'none';
+   balance2.style.display = 'none';
+   balance3.style.display = 'none';
+   balance4.style.display = 'block';
+   title1.style.backgroundColor = '#FFFFFF';
+   title2.style.backgroundColor = '#FFFFFF';
+   title3.style.backgroundColor = '#FFFFFF';
+   title4.style.backgroundColor = '#EEEEEE';
+   balance4.style.backgroundColor = '#EEEEEE';
+   balanceImg1.style.display = 'none';
+   balanceImg2.style.display = 'none';
+   balanceImg3.style.display = 'none';
+   balanceImg4.style.display = 'block';
+}
+
+  $(document).ready(function() {
+
+    $("a#example6").fancybox({
+      'titlePosition'		: 'outside',
+      'overlayColor'		: '#000',
+      'overlayOpacity'	: 0.9
+    });
+
+    $("a#example7").fancybox({
+      'titlePosition'	: 'inside'
+    });
+
+  });
+
+// Print Window Option
+function myFunction() {
+    window.print();
+  }
+
+// Exit Browser Window Option
+function exitFunction() {
+  var txt;
+  var r = confirm("Do you wish to exit this course? \nThis will close the browser window.")
+  if (r == true) {
+      txt = "You pressed OK!";
+      window.open('','_parent','');
+      window.close();
+  } else {
+      txt = "You pressed Cancel!";
+  }
+
+}
+
+</script>
+
+</body>
+
+
+
+</html>

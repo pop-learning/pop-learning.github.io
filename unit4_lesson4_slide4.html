@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DESIGN AND BUILD FOR HTML EMAIL</title>
+<link rel="stylesheet" type="text/css" href="stylesheet_mod2.css">
+
+<link rel="stylesheet" type="text/css" href="animate.css">
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+
+
+<div id="header_bar">
+
+
+<div id="title_icon"><a href="index.html"><img src="Images/ScreenLayoutImages/title_icon.png"></a></div>
+
+<div id="title_text">Design And Build For HTML Email</div>
+
+<div id="download_icon">
+  <a href="Downloads/LessonScreens/U4_L4_S4.jpg" download>
+  <img src="Images/ScreenLayoutImages/download_icon.png">
+</a>
+</div>
+
+<div id="print_icon">
+<a href="" onclick="myFunction()">
+<img src="Images/ScreenLayoutImages/print_icon.png">
+</a>
+</div>
+
+<div id="logo_image"><img src="Images/ScreenLayoutImages/logo_image.png"></div>
+
+
+</div>
+
+
+
+<div id="side_bar">
+
+<a href="index.html"><div id="home_btn"><img src="Images/Buttons/home_btn_yes.png" onmouseover="this.src='Images/Buttons/home_btn_over.png'" onmouseout="this.src='Images/Buttons/home_btn_yes.png'" onmousedown="this.src='Images/Buttons/home_btn_on.png'" /></div></a>
+
+<div id="about_btn"><a href="about.html"><img id="myImage" src="Images/Buttons/about_btn_off.png"
+onmouseover="this.src='Images/Buttons/about_btn_over.png'"
+onmouseout="this.src='Images/Buttons/about_btn_off.png'"
+onmousedown="this.src='Images/Buttons/about_btn_on.png'" /></a></div>
+
+<div id="lessons_btn"><a href="lessons.html"><img id="myImage" src="Images/Buttons/lessons_btn_off.png"
+onmouseover="this.src='Images/Buttons/lessons_btn_over.png'"
+onmouseout="this.src='Images/Buttons/lessons_btn_off.png'"
+onmousedown="this.src='Images/Buttons/lessons_btn_on.png'" /></a></div>
+
+<div id="glossary_btn"><a href="glossary.html"><img id="myImage" src="Images/Buttons/glossary_btn_off.png"
+onmouseover="this.src='Images/Buttons/glossary_btn_over.png'"
+onmouseout="this.src='Images/Buttons/glossary_btn_off.png'"
+onmousedown="this.src='Images/Buttons/glossary_btn_on.png'" /></a></div>
+
+</div>
+
+<div id="exit_btn" onclick="exitFunction()"><img id="myImage" src="Images/Buttons/exit_btn_yes.png"
+onmouseover="this.src='Images/Buttons/exit_btn_over.png'"
+onmouseout="this.src='Images/Buttons/exit_btn_yes.png'" /></div>
+
+
+<div id="breadcrumb_bar">
+
+<div id="breadcrumb_start"><img src="Images/ScreenLayoutImages/breadcrumb_start.png"></div>
+
+<div id="module_name"><b>MODULE:</b><br/><a href="module2_intro.html">Design Guidelines</a></div>
+
+<div id="breadcrumb_between"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="unit_name"><b>UNIT TWO:</b><br/><a href="unit4_lesson1_slide1.html">Email Design for Mobile</a></div>
+
+<div id="breadcrumb_between2"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="lesson_name"><b>LESSON FOUR:</b><br/><a href="unit4_lesson4_slide1.html">Media Queries and Breakpoints</a></div>
+
+</div>
+
+<div id="intro_home">
+  <h1>Media Queries and Breakpoints</h1>
+  <h2>What are breakpoints?</h2>
+
+  Media queries target certain viewport widths known as breakpoints. Early <br/>
+  thinking was to specify breakpoints for multiple mobiles devices of slightly <br/>
+  varying widths.
+  <br/><br/>
+  <b>/* iPhone 6+ ----------- */</b><br/>
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) <br/>and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) &#123;<br/>
+  &nbsp; &nbsp; &nbsp; &nbsp;/* Styles */<br/>
+  &#125;
+  <br/><br/>
+  <b>/* Samsung Galaxy S5 ----------- */</b><br/>
+  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) <br/>and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) &#123;<br/>
+  &nbsp; &nbsp; &nbsp; &nbsp;/* Styles */<br/>
+  &#125;
+  <br/><br/>
+  However, best-practice now recommends targeting only a limited selection of <br/>
+  breakpoints. Many mobile devices only have minor variations in their viewport <br/>
+  widths and targeting each of them is excessive.
+
+<div id="buttonLinks">
+  <a href="unit4_lesson4_slide3.html"><img src="Images/Buttons/prev_btn.jpg"></a>
+    &nbsp;&nbsp;&nbsp;
+  <a href="unit4_lesson4_slide5.html"><img src="Images/Buttons/next_btn.jpg"></a>
+  </div>
+
+
+<div id="linebox">LESSON 4: SCREEN 4 OF 7
+  <span class="page_bullets" style="font-size: 20px !important; text-align: right;">
+    &nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_active.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">
+  </span>
+</div>
+
+
+
+</div>
+
+<div id="imgbox6"><img src="Images/LessonContent/media_query_breakpoints.png"></div>
+
+
+
+</body>
+
+
+</html>

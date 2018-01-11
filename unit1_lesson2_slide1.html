@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>DESIGN AND BUILD FOR HTML EMAIL</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+<div id="header_bar">
+
+
+<div id="title_icon"><a href="index.html"><img src="Images/ScreenLayoutImages/title_icon.png"></a></div>
+
+<div id="title_text">Design And Build For HTML Email</div>
+
+<div id="download_icon">
+  <a href="Downloads/LessonScreens/U1_L2_S1.jpg" download>
+  <img src="Images/ScreenLayoutImages/download_icon.png">
+</a>
+</div>
+
+<div id="print_icon">
+<a href="" onclick="myFunction()">
+<img src="Images/ScreenLayoutImages/print_icon.png">
+</a>
+</div>
+
+<div id="logo_image"><a href="https://www.poppulo.com/" target="_blank"><img src="Images/ScreenLayoutImages/logo_image.png"></a></div>
+
+
+</div>
+
+
+
+<div id="side_bar">
+
+<a href="index.html"><div id="home_btn"><img src="Images/Buttons/home_btn_yes.png" onmouseover="this.src='Images/Buttons/home_btn_over.png'" onmouseout="this.src='Images/Buttons/home_btn_yes.png'" onmousedown="this.src='Images/Buttons/home_btn_on.png'" /></div></a>
+
+<div id="about_btn"><a href="about.html"><img id="myImage" src="Images/Buttons/about_btn_off.png"
+onmouseover="this.src='Images/Buttons/about_btn_over.png'"
+onmouseout="this.src='Images/Buttons/about_btn_off.png'"
+onmousedown="this.src='Images/Buttons/about_btn_on.png'" /></a></div>
+
+<div id="lessons_btn"><a href="lessons.html"><img id="myImage" src="Images/Buttons/lessons_btn_off.png"
+onmouseover="this.src='Images/Buttons/lessons_btn_over.png'"
+onmouseout="this.src='Images/Buttons/lessons_btn_off.png'"
+onmousedown="this.src='Images/Buttons/lessons_btn_on.png'" /></a></div>
+
+<div id="glossary_btn"><a href="glossary.html"><img id="myImage" src="Images/Buttons/glossary_btn_off.png"
+onmouseover="this.src='Images/Buttons/glossary_btn_over.png'"
+onmouseout="this.src='Images/Buttons/glossary_btn_off.png'"
+onmousedown="this.src='Images/Buttons/glossary_btn_on.png'" /></a></div>
+
+</div>
+
+<div id="exit_btn" onclick="exitFunction()"><img id="myImage" src="Images/Buttons/exit_btn_yes.png"
+onmouseover="this.src='Images/Buttons/exit_btn_over.png'"
+onmouseout="this.src='Images/Buttons/exit_btn_yes.png'" /></div>
+
+
+<div id="breadcrumb_bar">
+
+<div id="breadcrumb_start"><img src="Images/ScreenLayoutImages/breadcrumb_start.png"></div>
+
+<div id="module_name"><b>MODULE:</b><br/><a href="module1_intro.html">HTML Email and Rendering Issues</a></div>
+
+<div id="breadcrumb_between"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="unit_name"><b>UNIT ONE:</b><br/><a href="unit1_lesson1_slide1.html">Introduction to HTML Email</a></div>
+
+<div id="breadcrumb_between2"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="lesson_name"><b>LESSON TWO:</b><br/><a href="unit1_lesson2_slide1.html">Coding for HTML Email</a></div>
+
+</div>
+
+<div id="intro_objectives">
+
+
+  <h1>Lesson 2: Coding for HTML Email</h1>
+
+  After completing this lesson you will be able to:
+  <br/><br/>
+  <ul>
+  <li>Explain the need for tables and nested tables in HTML Email</li>
+  <li>Explain the difference between inline CSS, internal CSS, and external CSS</li>
+  <li>Use images appropriately within email</li>
+  <li>List which common CSS properties and HTML elements to avoid
+  </ul>
+
+
+</div>
+
+
+
+
+
+
+<div id="buttonLinks">
+  <a href="unit1_lesson1_slide6.html"><img src="Images/Buttons/prev_lesson_btn.jpg"></a>
+    &nbsp;&nbsp;&nbsp;
+  <a href="unit1_lesson2_slide2.html"><img src="Images/Buttons/begin_btn.jpg"></a>
+  </div>
+
+
+
+
+
+
+<div id="linebox">LESSON 2: SCREEN 1 OF 5
+  <span class="page_bullets" style="font-size: 20px !important; text-align: right;">
+    &nbsp;
+    <img src="Images/ScreenLayoutImages/dot_active.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">
+  </span>
+</div>
+
+<div id="imgbox"><img src="Images/ScreenLayoutImages/CourseProgress_1_2.png"></div>
+
+<script type="text/javascript">
+
+// Declare variables for videos
+var myVideo1 = document.getElementById("video1");
+
+myVideo1.autoplay = true;
+myVideo1.load();
+myVideo1.volume = 0.2;
+
+
+// Print Window Option
+function myFunction() {
+    window.print();
+  }
+
+// Exit Browser Window Option
+function exitFunction() {
+  var txt;
+  var r = confirm("Do you wish to exit this course? \nThis will close the browser window.")
+  if (r == true) {
+      txt = "You pressed OK!";
+      window.open('','_parent','');
+      window.close();
+  } else {
+      txt = "You pressed Cancel!";
+  }
+
+}
+
+</script>
+
+</body>
+
+
+
+</html>

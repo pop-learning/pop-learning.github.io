@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>DESIGN AND BUILD FOR HTML EMAIL</title>
+
+<script>
+  !window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+
+  $.preloadImages = function() {
+  for (var i = 0; i < arguments.length; i++) {
+    $("<img />").attr("src", arguments[i]);
+  }
+}
+
+$.preloadImages("Images/LessonContent/large_small.jpg","Images/LessonContent/texture_smooth.jpg","Images/LessonContent/dark_light.jpg","Images/LessonContent/warm_cool.jpg","Images/LessonContent/regular_irregular.jpg");
+
+</script>
+
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+
+<link rel="stylesheet" type="text/css" href="stylesheet_mod2.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+
+</head>
+
+
+<body>
+
+<div id="header_bar">
+
+
+<div id="title_icon"><a href="index.html"><img src="Images/ScreenLayoutImages/title_icon.png"></a></div>
+
+<div id="title_text">Design And Build For HTML Email</div>
+
+<div id="download_icon">
+  <a href="Downloads/LessonScreens/U3_L1_S6.jpg" download>
+  <img src="Images/ScreenLayoutImages/download_icon.png">
+</a>
+</div>
+
+<div id="print_icon">
+<a href="" onclick="myFunction()">
+<img src="Images/ScreenLayoutImages/print_icon.png">
+</a>
+</div>
+
+<div id="logo_image"><a href="https://www.poppulo.com/" target="_blank"><img src="Images/ScreenLayoutImages/logo_image.png"></a></div>
+
+
+</div>
+
+
+
+<div id="side_bar">
+
+<a href="index.html"><div id="home_btn"><img src="Images/Buttons/home_btn_yes.png" onmouseover="this.src='Images/Buttons/home_btn_over.png'" onmouseout="this.src='Images/Buttons/home_btn_yes.png'" onmousedown="this.src='Images/Buttons/home_btn_on.png'" /></div></a>
+
+<div id="about_btn"><a href="about.html"><img id="myImage" src="Images/Buttons/about_btn_off.png"
+onmouseover="this.src='Images/Buttons/about_btn_over.png'"
+onmouseout="this.src='Images/Buttons/about_btn_off.png'"
+onmousedown="this.src='Images/Buttons/about_btn_on.png'" /></a></div>
+
+<div id="lessons_btn"><a href="lessons.html"><img id="myImage" src="Images/Buttons/lessons_btn_off.png"
+onmouseover="this.src='Images/Buttons/lessons_btn_over.png'"
+onmouseout="this.src='Images/Buttons/lessons_btn_off.png'"
+onmousedown="this.src='Images/Buttons/lessons_btn_on.png'" /></a></div>
+
+<div id="glossary_btn"><a href="glossary.html"><img id="myImage" src="Images/Buttons/glossary_btn_off.png"
+onmouseover="this.src='Images/Buttons/glossary_btn_over.png'"
+onmouseout="this.src='Images/Buttons/glossary_btn_off.png'"
+onmousedown="this.src='Images/Buttons/glossary_btn_on.png'" /></a></div>
+
+</div>
+
+<div id="exit_btn" onclick="exitFunction()"><img id="myImage" src="Images/Buttons/exit_btn_yes.png"
+onmouseover="this.src='Images/Buttons/exit_btn_over.png'"
+onmouseout="this.src='Images/Buttons/exit_btn_yes.png'" /></div>
+
+
+<div id="breadcrumb_bar">
+
+<div id="breadcrumb_start"><img src="Images/ScreenLayoutImages/breadcrumb_start.png"></div>
+
+<div id="module_name"><b>MODULE:</b><br/><a href="module2_intro.html">Design Guidelines</a></div>
+
+<div id="breadcrumb_between"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="unit_name"><b>UNIT ONE:</b><br/><a href="unit3_lesson1_slide1.html">Best-practice design for HTML Email</a></div>
+
+<div id="breadcrumb_between2"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="lesson_name"><b>LESSON ONE:</b><br/><a href="unit3_lesson1_slide1.html">Principles of good design</a></div>
+
+</div>
+
+<div id="intro_560px">
+
+  <h1>Principles of Good Design</h1>
+  <h2>Visual Weight</h2>
+  <br/>
+  Visual weight is the perceived weight of a visual element. It is a
+  measure of how much a visual element draws the reader&apos;s eye. Visual
+  weight can be measured by size, colour, value, position, texture,
+  shape, and orientation.
+  <br/><br/>
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="weight_col1">
+        <div id="startBox" class="hover1" onmouseover="hover1Box()">
+        Large elements have more visual weight than small elements.
+        </div>
+        <div id="startBox2" class="hover2" onmouseover="hover2Box()">
+        Texture gives an element a three-dimensional appearance,
+        suggesting greater mass and visual weight.
+        </div>
+      </td>
+      <td class="weight_col2">
+        <div id="startBox3" class="hover3" onmouseover="hover3Box()">
+        Dark colours are perceived as heavier than light colours.
+        </div>
+        <div id="startBox4" class="hover4" onmouseover="hover4Box()">
+        Warm colours advance into the foreground, while cool colours
+        recede into the background.
+        </div>
+      </td>
+      <td class="weight_col3">
+        <div id="startBox5" class="hover5" onmouseover="hover5Box()">
+        Objects with a regular shape appear heavier than objects with
+        an irregular shape. The regular shape is perceived as a whole
+        object, while the irregular shape is seen as missing it&apos;s full
+        mass.
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  </div>
+
+  <div id="visualweight">
+
+  </div>
+
+<div id="rolloverText"><i>Roll over the text on the left of the screen to change the image</i></div>
+
+
+
+<div id="buttonLinks">
+  <a href="unit3_lesson1_slide5.html"><img src="Images/Buttons/prev_btn.jpg"></a>
+    &nbsp;&nbsp;&nbsp;
+  <a href="unit3_lesson1_slide7.html"><img src="Images/Buttons/next_btn.jpg"></a>
+  </div>
+
+
+
+
+
+
+<div id="linebox">LESSON 1: SCREEN 6 OF 7
+  <span class="page_bullets" style="font-size: 20px !important; text-align: right;">
+    &nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_active.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">
+  </span>
+</div>
+
+
+
+<script type="text/javascript">
+
+var imgContainer = document.getElementById("visualweight");
+var startbox = document.getElementById("startBox");
+var startbox2 = document.getElementById("startBox2");
+var startbox3 = document.getElementById("startBox3");
+var startbox4 = document.getElementById("startBox4");
+var startbox5 = document.getElementById("startBox5");
+
+startBox.style.backgroundColor = "#18E5C9";
+
+imgContainer.style.backgroundImage  = "url('Images/LessonContent/large_small.jpg')";
+
+function hover1Box() {
+   imgContainer.style.backgroundImage  = "url('Images/LessonContent/large_small.jpg')";
+   startBox.style.backgroundColor = "#18E5C9";
+   startBox2.style.backgroundColor = "#FFFFFF";
+   startBox3.style.backgroundColor = "#FFFFFF";
+   startBox4.style.backgroundColor = "#FFFFFF";
+   startBox5.style.backgroundColor = "#FFFFFF";
+}
+
+function hover2Box() {
+   imgContainer.style.backgroundImage  = "url('Images/LessonContent/texture_smooth.jpg')";
+   startBox.style.backgroundColor = "#FFFFFF";
+   startBox2.style.backgroundColor = "#18E5C9";
+   startBox3.style.backgroundColor = "#FFFFFF";
+   startBox4.style.backgroundColor = "#FFFFFF";
+   startBox5.style.backgroundColor = "#FFFFFF";
+}
+
+function hover3Box() {
+   imgContainer.style.backgroundImage  = "url('Images/LessonContent/dark_light.jpg')";
+   startBox.style.backgroundColor = "#FFFFFF";
+   startBox2.style.backgroundColor = "#FFFFFF";
+   startBox3.style.backgroundColor = "#18E5C9";
+   startBox4.style.backgroundColor = "#FFFFFF";
+   startBox5.style.backgroundColor = "#FFFFFF";
+}
+
+function hover4Box() {
+   imgContainer.style.backgroundImage  = "url('Images/LessonContent/warm_cool.jpg')";
+   startBox.style.backgroundColor = "#FFFFFF";
+   startBox2.style.backgroundColor = "#FFFFFF";
+   startBox3.style.backgroundColor = "#FFFFFF";
+   startBox4.style.backgroundColor = "#18E5C9";
+   startBox5.style.backgroundColor = "#FFFFFF";
+}
+
+function hover5Box() {
+   imgContainer.style.backgroundImage  = "url('Images/LessonContent/regular_irregular.jpg')";
+   startBox.style.backgroundColor = "#FFFFFF";
+   startBox2.style.backgroundColor = "#FFFFFF";
+   startBox3.style.backgroundColor = "#FFFFFF";
+   startBox4.style.backgroundColor = "#FFFFFF";
+   startBox5.style.backgroundColor = "#18E5C9";
+}
+
+  $(document).ready(function() {
+
+    $("a#example6").fancybox({
+      'titlePosition'		: 'outside',
+      'overlayColor'		: '#000',
+      'overlayOpacity'	: 0.9
+    });
+
+    $("a#example7").fancybox({
+      'titlePosition'	: 'inside'
+    });
+
+  });
+
+// Print Window Option
+function myFunction() {
+    window.print();
+  }
+
+// Exit Browser Window Option
+function exitFunction() {
+  var txt;
+  var r = confirm("Do you wish to exit this course? \nThis will close the browser window.")
+  if (r == true) {
+      txt = "You pressed OK!";
+      window.open('','_parent','');
+      window.close();
+  } else {
+      txt = "You pressed Cancel!";
+  }
+
+}
+
+</script>
+
+</body>
+
+
+
+</html>

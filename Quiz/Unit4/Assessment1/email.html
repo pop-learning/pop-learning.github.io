@@ -1,0 +1,599 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<title>
+Internal Newsletter Snapshot Example
+</title>
+
+<style>
+
+.nw_layout_LAYOUT2{
+	background-color: #EEEEEE;
+}
+
+#wrapper{
+	padding-top: 1em;
+	background-color: #EEEEEE;
+}
+
+.nw-componentSpacerMainCell{
+	width: 650px;
+}
+
+#mastheadeditable .nw-componentMainCell{
+	background-color: #FFFFFF;
+	padding: 25px;
+}
+
+#mastheadeditable .main_title{
+	font-size: 22px;
+	color: #8CC63E;
+	font-weight: normal;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+#featurearticle .nw-componentMainCell{
+	background-color: #EEEEEE;
+	padding: 20px 0 30px 0;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+#featurearticle .title, #featurearticle .title a{
+	color: #8CC63E;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	padding-bottom: 8px;
+}
+
+#featurearticle .summary,
+#articles .summary{
+	color: #666666;
+	font-size: 13px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+#featurearticle .summary a,
+#articles .summary a{
+	color: #666666;
+	text-decoration: underline;
+}
+
+#left{
+	background-color: #FFFFFF;
+	padding-left: 25px;
+	padding-right:25px;
+	padding-top: 20px;
+}
+
+#main{
+	background-color: #8CC63E;
+	padding-left: 25px;
+	padding-right:25px;
+	padding-top: 20px;
+}
+
+#nw_articles_wrapper .nw-componentSpacerMainCell,
+#nw_toc_wrapper .nw-componentSpacerMainCell,
+#nw_useful_wrapper .nw-componentSpacerMainCell,
+#nw_adspace_wrapper .nw-componentSpacerMainCell{
+	padding-bottom: 20px;
+}
+
+#featurearticle .after_article_title_fragment td,
+#articles .after_article_title_fragment td{
+	padding-bottom: 8px;
+}
+
+.nw_img_main_cell{
+	padding: 0 20px 20px 0;
+}
+
+#articles .nw_summary_wrapper{
+	padding-bottom: 25px;
+}
+
+#articles .title, #articles .title a{
+	font-weight: normal;
+	font-size: 17px;
+	color: #333333;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#footertext .nw-componentMainCell{
+text-align: center;
+padding: 20px 0;
+font-size: 12px;
+color: #333333;
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+#after_text td{
+text-align: center;
+padding: 0 0 40px 0;
+font-size: 12px;
+color: #333333;
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.section-name{
+color: #8CC63E;
+font-size: 17px;
+font-weight: bold;
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+padding-bottom: 10px;
+}
+
+#tocDisplayTitle td,
+#usefulDisplayTitle td,
+#adspaceDisplayTitle td{
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	padding: 0 0 10px 0;
+}
+
+#toc .title, #toc .title a{
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#useful .nw-componentMainCell{
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	line-height: 21px;
+}
+
+#useful .nw-componentMainCell a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#adspace .nw-componentMainCell{
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+#adspace .nw-componentMainCell a{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.between_toc_article_fragment td{
+	padding-bottom: 3px;
+}
+
+
+@media only screen and (max-width: 599px) {
+#wrapper{
+padding-top:0 !important;
+}
+
+/* Hide before text if not required */
+#before_text{
+display:none !important;
+}
+
+/* All layout pages are set to 100% width */
+#CoverPage, .ArticlePage, .Generic, .SystemResponsePage,
+.before_text_wrapper table{
+width:100% !important;
+}
+
+.nw_layout_LAYOUT2{
+    width:100% !important;
+}
+
+/* Fix for non-Auto-Scaling of images in iOS10 */
+body{
+  padding: 0 !important;
+}
+
+/* Override for test and review banner */
+#nsta-review-banner-header,
+#ntsa-review-banner-right,
+#ntsa-review-banner-right table td{
+  display:block !important;
+  width: auto !important;
+}
+
+#ntsa-review-banner-right,
+#ntsa-review-banner-right table{
+  max-width: 320px !important;
+  width: 100% !important;
+}
+
+#ntsa-review-banner-right table td image{
+  display:none !important;
+}
+
+.nw_articleGallery_image img{
+  max-width: 100% !important;
+}
+
+/* Ensure that long URLs and words will wrap */
+.Generic .nw-componentSpacerMainCell table,
+.ArticlePage .nw-componentSpacerMainCell table{
+  table-layout:fixed !important;
+}
+
+*{
+  word-wrap:break-word !important;
+  word-wrap:break-all !important;
+}
+
+/* Scale user-entered images to max width of the screen */
+.nw_summary_wrapper .summary img, .full-story img{
+  max-width: 100% !important;
+  height:inherit !important;
+}
+
+/* Scale tables and iframes (videos) to width of the screen */
+.nw_summary_wrapper .summary table, .full-story table, #wrapper iframe{
+  width:100% !important;
+  height:inherit !important;
+}
+
+.nw_img_cell img{
+  max-width: 100% !important;
+  height: inherit !important;
+}
+
+.nw_img_table, .nw_img_wrapper{
+  width:100% !important;
+}
+
+/* Aligning non-wrapped articles images to top of article - when Article image is on the left and article summary is on the right */
+/* Move article images on top of title/summary */
+.nw_summary_right{
+  width: 100% !important;
+  display:table-footer-group !important;
+}
+
+.nw_img_left{
+  width: 100% !important;
+  display:table-header-group !important;
+}
+
+/* Aligning non-wrapped articles images to top of article - when Article image is on the right and article summary is on the left */
+.nw_summary_left{
+  width: 100% !important;
+  display:table-footer-group !important;
+}
+
+.nw_img_right{
+  width:100% !important;
+  display:table-header-group !important;
+}
+
+
+
+}
+
+
+
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+	</head>
+
+
+<body style="margin:0; padding:0;">
+<div class="content" id="wrapper">
+<div class="nw_layout_LAYOUT2">
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="CoverPage" id="CoverPage"
+ style="" width="650">
+<tr><!-- buildCellForTableRow -->
+<!-- buildCellForTableRow -->
+<td id="header" valign="top" width="650">
+<!-- renderCellComponentsList --><!-- renderCellComponentsList_list -->
+<!-- renderTemplateComponent -->
+
+<table id="nw_mastheadeditable_wrapper" class="nw_component_wrapper" cellpadding="0" cellspacing="0">
+<tr><td class="nw-componentSpacerMainCell"><!-- buildTemplateComponentStructure -->
+<table cellpadding="0" cellspacing="0" class="ContentBlock" id="mastheadeditable" style="margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;" width="100%">
+<tr><td class="nw-componentMainCell"><table style="width: 100%;" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="logo"><img alt="" src="images/logo.png" width="200" height="64" /></a></td><td class="main_title">Yes Together!</td></tr></tbody></table></td></tr></table>
+<!-- /buildTemplateComponentStructure --></td></tr>
+</table>
+
+<!-- /renderTemplateComponent -->
+<!-- /renderCellComponentsList_list --><!-- renderCellComponentsList_list -->
+<!-- renderTemplateComponent -->
+
+<table id="nw_masthead_wrapper" class="nw_component_wrapper" cellpadding="0" cellspacing="0"
+>
+<tr><td class="nw-componentSpacerMainCell"><!-- buildTemplateComponentStructure -->
+<table cellpadding="0" cellspacing="0" class="ContentBlock" id="masthead" style="margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;" width="100%">
+<tr><td class="nw-componentMainCell"><img alt="" src="images/masthead_img.jpg" width="650" height="345" /></td></tr></table>
+<!-- /buildTemplateComponentStructure --></td></tr>
+</table>
+
+<!-- /renderTemplateComponent -->
+<!-- /renderCellComponentsList_list --><!-- renderCellComponentsList_list -->
+<!-- renderTemplateComponent -->
+
+<table id="nw_featurearticle_wrapper" class="nw_component_wrapper" cellpadding="0" cellspacing="0"
+>
+<tr><td class="nw-componentSpacerMainCell"><!-- buildTemplateComponentStructure -->
+<table cellpadding="0" cellspacing="0" class="ArticleSummary" id="featurearticle" style="margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;" width="100%">
+<tr><td class="nw-componentMainCell">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" align="left"><tr><td class="feature-article">
+<!-- [-ARTICLES-] -->
+<span class="title">A year to remember for Yes Energy</span>
+<!-- After Article Title Fragment --><table style="width: 10%;" class="after_article_title_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table>
+
+<div class="nw_summary_wrapper">
+<span class="summary" id="articleSummary_18012845">
+This is the article summary. It should be a paragraph summarising the article and encouraging the reader to click on the read more link. An image can help to add interest to the article. Make an article appear here by assigning it to the <strong>"Feature Article"</strong> section.
+</span>
+</div>
+
+
+</div>
+</td></tr></table>
+<!-- close feature article box -->
+</td>
+</tr>
+</table>
+</td></tr></table>
+<!-- /buildTemplateComponentStructure --></td></tr>
+</table>
+
+<!-- /renderTemplateComponent -->
+<!-- /renderCellComponentsList_list -->
+
+<!-- /renderCellComponentsList --></td>
+<!-- /buildCellForTableRow --></tr>
+<tr><td valign="top" id="nw-layout-containercell1"><table cellpadding="0" cellspacing="0" width="100%">
+<tr><!-- buildCellForTableRow -->
+<!-- buildCellForTableRow -->
+<td id="left" valign="top" width="70%">
+<!-- renderCellComponentsList --><!-- renderCellComponentsList_list -->
+<!-- renderTemplateComponent -->
+
+<table id="nw_articles_wrapper" class="nw_component_wrapper" cellpadding="0" cellspacing="0"
+>
+<tr><td class="nw-componentSpacerMainCell"><!-- buildTemplateComponentStructure -->
+<table cellpadding="0" cellspacing="0" class="ArticleSummary" id="articles" style="margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;" width="100%">
+<tr><td class="nw-componentMainCell">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="nw_section_title_table"><tr><td class="MainArticles">
+<div class="section">
+<div class="MainArticles">
+<!-- section headers -->
+<table class="section_header" width="100%" cellpadding="0" cellspacing="0"><tr><td> <div class="section-name">Main Articles</div>
+</td></tr></table>
+<!-- After Article Title Fragment --><table style="width: 10%;" class="after_article_title_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table> </div></div>
+</td></tr></table>
+<table width="100%" cellpadding="0" cellspacing="0" align="left"><tr><td class="article-wrapper">
+<!-- [-ARTICLES-] -->
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td valign="top" class="nw_img_left">
+<div class="nw_lotus" style="height: 0; line-height: 0; font-size: 0; background-color: transparent;">&nbsp;</div><!-- Lotus Fix-->
+<table class="nw_img_table" align="left" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td class="nw_img_main_cell" style="">
+<table class="nw_img_wrapper" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td class="nw_img_cell">
+<span id="articleSummaryImage_18012855" class="summary">
+<img src="images/img1.png" width="180" height="132"
+alt="" title="" border="0"/></span></td></tr>
+</tbody></table>
+</td>
+</tr></tbody></table>
+</td>
+<td valign="top" class="nw_summary_right">
+<div class="nw_summary_wrapper">
+<span class="title">Let's celebrate good times</span>
+<!-- After Article Title Fragment --><table style="width: 10%;" class="after_article_title_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table>
+<span class="summary" id="articleSummary_18012855">
+This is the article summary. It should be a paragraph summarising the article and encouraging the reader to click on the read more link.
+</span>
+</div>
+
+
+</td>
+</tr></tbody></table>
+</td></tr></table>
+<!-- close article wrapper -->
+<!-- Between Article Fragment --><table style="width: 100%;" class="between_article_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="divider_line"><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table><table width="100%" cellpadding="0" cellspacing="0" align="left"><tr><td class="article-wrapper">
+<!-- [-ARTICLES-] -->
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td valign="top" class="nw_img_left">
+<div class="nw_lotus" style="height: 0; line-height: 0; font-size: 0; background-color: transparent;">&nbsp;</div><!-- Lotus Fix-->
+<table class="nw_img_table" align="left" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td class="nw_img_main_cell" style="">
+<table class="nw_img_wrapper" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td class="nw_img_cell">
+<span id="articleSummaryImage_18012865" class="summary">
+<img src="images/img2.png" width="180" height="163"
+alt="" title="" border="0"/></span></td></tr>
+</tbody></table>
+</td>
+</tr></tbody></table>
+</td>
+<td valign="top" class="nw_summary_right">
+<div class="nw_summary_wrapper">
+<span class="title">What our customers say...</span>
+<!-- After Article Title Fragment --><table style="width: 10%;" class="after_article_title_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table>
+<span class="summary" id="articleSummary_18012865">
+This is the article summary. It should be a paragraph summarising the article and encouraging the reader to click on the read more link.
+</span>
+</div>
+
+
+</td>
+</tr></tbody></table>
+</td></tr></table>
+<!-- close article wrapper -->
+<!-- Between Article Fragment --><table style="width: 100%;" class="between_article_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="divider_line"><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr>
+<tr>
+	<td>
+		<img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table><table width="100%" cellpadding="0" cellspacing="0" align="left"><tr><td class="article-wrapper">
+<!-- [-ARTICLES-] -->
+<table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td valign="top" class="nw_img_left">
+<div class="nw_lotus" style="height: 0; line-height: 0; font-size: 0; background-color: transparent;">&nbsp;</div><!-- Lotus Fix-->
+<table class="nw_img_table" align="left" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
+<td class="nw_img_main_cell" style="">
+<table class="nw_img_wrapper" border="0" cellpadding="0" cellspacing="0"><tbody>
+<tr><td class="nw_img_cell">
+<span id="articleSummaryImage_18012875" class="summary">
+<img src="images/img3.png" width="180" height="119"
+alt="" title="" border="0"/></span></td></tr>
+</tbody></table>
+</td>
+</tr></tbody></table>
+</td>
+<td valign="top" class="nw_summary_right">
+<div class="nw_summary_wrapper">
+<span class="title">Join Sports and Social</span>
+<!-- After Article Title Fragment --><table style="width: 10%;" class="after_article_title_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table>
+<span class="summary" id="articleSummary_18012875">
+This is the article summary. It should be a paragraph summarising the article and encouraging the reader to click on the read more link.
+</span>
+</div>
+
+</td>
+</tr></tbody></table>
+</td></tr></table>
+<!-- close article wrapper -->
+<!-- After Sections Fragment -->
+<table style="width: 100%;" class="after_sections_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table>
+</td>
+</tr>
+</table>
+</td></tr></table>
+<!-- /buildTemplateComponentStructure --></td></tr>
+</table>
+
+<!-- /renderTemplateComponent -->
+<!-- /renderCellComponentsList_list -->
+
+<!-- /renderCellComponentsList --></td>
+<!-- /buildCellForTableRow -->
+<!-- buildCellForTableRow -->
+<!-- buildCellForTableRow -->
+<td id="main" valign="top" width="30%">
+<!-- renderCellComponentsList --><!-- renderCellComponentsList_list -->
+<!-- renderTemplateComponent -->
+
+<table cellspacing="0"
+cellpadding="0"
+id="tocDisplayTitle" class="DisplayTitle"><tr><td >
+In this issue
+</td></tr></table>
+<table id="nw_toc_wrapper" class="nw_component_wrapper" cellpadding="0" cellspacing="0"
+>
+<tr><td class="nw-componentSpacerMainCell"><!-- buildTemplateComponentStructure -->
+<table cellpadding="0" cellspacing="0" class="ArticleSummary" id="toc" style="margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;" width="100%">
+<tr><td class="nw-componentMainCell">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td>
+<!-- [-ARTICLES-] -->
+<span class="title">A year to remember for Yes Energy</span>
+</td>
+</tr>
+</table>
+<!-- Between TOC Article Fragment --><table style="width: 100%;" class="between_toc_article_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="divider_line"><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td>
+<!-- [-ARTICLES-] -->
+<span class="title">Let's celebrate good times</span>
+<!-- Between TOC Article Fragment --><table style="width: 100%;" class="between_toc_article_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="divider_line"><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table>
+<!-- [-ARTICLES-] -->
+<span class="title">What our customers say...</span>
+<!-- Between TOC Article Fragment --><table style="width: 100%;" class="between_toc_article_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="divider_line"><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table>
+<!-- [-ARTICLES-] -->
+<span class="title">Join Sports and Social</span>
+</td>
+</tr>
+</table>
+</td></tr></table>
+<!-- /buildTemplateComponentStructure --></td></tr>
+</table>
+
+<!-- /renderTemplateComponent -->
+<!-- /renderCellComponentsList_list --><!-- renderCellComponentsList_list -->
+<!-- renderTemplateComponent -->
+
+<table cellspacing="0" cellpadding="0" id="usefulDisplayTitle" class="DisplayTitle"><tr><td >
+Useful links
+</td></tr></table>
+<table id="nw_useful_wrapper" class="nw_component_wrapper" cellpadding="0" cellspacing="0"
+>
+<tr><td class="nw-componentSpacerMainCell"><!-- buildTemplateComponentStructure -->
+<table cellpadding="0" cellspacing="0" class="ContentBlock" id="useful" style="margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;" width="100%">
+<tr><td class="nw-componentMainCell">Send to a colleague<!-- Between Links Fragment --><table style="width: 100%;" class="between_links_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="divider_line"><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table>Issue archive<!-- Between Links Fragment --><table style="width: 100%;" class="between_links_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="divider_line"><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table>Download as PDF<!-- Between Links Fragment --><table style="width: 100%;" class="between_links_fragment" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="divider_line"><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr><tr><td><img border="0" src="images/spacer.png" alt="" width="20" height="1"/></td></tr></tbody></table><a href="#">Visit our intranet</a></td></tr></table>
+<!-- /buildTemplateComponentStructure --></td></tr>
+</table>
+
+<!-- /renderTemplateComponent -->
+<!-- /renderCellComponentsList_list --><!-- renderCellComponentsList_list -->
+<!-- renderTemplateComponent -->
+
+<table cellspacing="0" cellpadding="0" id="adspaceDisplayTitle" class="DisplayTitle"><tr><td >
+Have your say
+</td></tr></table>
+<table id="nw_adspace_wrapper" class="nw_component_wrapper" cellpadding="0" cellspacing="0"
+>
+<tr><td class="nw-componentSpacerMainCell"><!-- buildTemplateComponentStructure -->
+<table cellpadding="0" cellspacing="0" class="ContentBlock" id="adspace" style="margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;" width="100%">
+<tr><td class="nw-componentMainCell"><span style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim tellus et tortor porttitor, sit amet lobortis leo posuere. Aenean <a href="#"><span style="color: #ffffff;">suscipit</span></a> ante non est vehicula euismod.</span></td></tr></table>
+<!-- /buildTemplateComponentStructure --></td></tr>
+</table>
+
+<!-- /renderTemplateComponent -->
+<!-- /renderCellComponentsList_list -->
+
+<!-- /renderCellComponentsList --></td>
+<!-- /buildCellForTableRow --></tr>
+</table></td></tr>
+<tr><!-- buildCellForTableRow -->
+<!-- buildCellForTableRow -->
+<td id="footer" valign="top" width="650">
+<!-- renderCellComponentsList --><!-- renderCellComponentsList_list -->
+<!-- renderTemplateComponent -->
+
+<table id="nw_footertext_wrapper" class="nw_component_wrapper" cellpadding="0" cellspacing="0"
+>
+<tr><td class="nw-componentSpacerMainCell"><!-- buildTemplateComponentStructure -->
+<table cellpadding="0" cellspacing="0" class="ContentBlock" id="footertext" style="margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;" width="100%">
+<tr><td class="nw-componentMainCell">Published by Yes Energy Internal Communications Team 2014</td></tr></table>
+<!-- /buildTemplateComponentStructure --></td></tr>
+</table>
+
+<!-- /renderTemplateComponent -->
+<!-- /renderCellComponentsList_list -->
+
+<!-- /renderCellComponentsList --></td>
+<!-- /buildCellForTableRow --></tr>
+</table>
+
+
+
+</div>
+</div>
+
+</body>
+</html>

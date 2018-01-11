@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DESIGN AND BUILD FOR HTML EMAIL</title>
+<link rel="stylesheet" type="text/css" href="stylesheet_mod2.css">
+
+<link rel="stylesheet" type="text/css" href="animate.css">
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="script.js" defer></script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <style>
+  #droppable { text-align: center; vertical-align: middle; width: 147px; height: 30px; margin: 0; }
+  #draggable, #draggable-nonvalid { text-align: center; vertical-align: middle; width: 130px; margin: 8px;}
+  </style>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+
+    $("#wordResponseInner").hide();
+    $("#outerbuttonLinks").hide();
+
+    $( "#draggable, #draggable-nonvalid" ).draggable({ revert: "invalid" });
+    $( "#droppable" ).droppable({
+      accept: "#draggable",
+      classes: {
+        "ui-droppable-active": "ui-state-active",
+        "ui-droppable-hover": "ui-state-hover"
+      },
+
+      drop: function( event, ui ) {
+        $('#draggable').draggable('option', 'disabled', true);
+        $("#wordResponseInner").show();
+        $("#outerbuttonLinks").show();
+
+        $(ui.draggable).detach().css({top: -41,left: -10}).appendTo(this);
+      }
+
+    });
+  } );
+
+
+  </script>
+
+
+</head>
+
+<body>
+
+
+<div id="header_bar">
+
+
+<div id="title_icon"><a href="index.html"><img src="Images/ScreenLayoutImages/title_icon.png"></a></div>
+
+<div id="title_text">Design And Build For HTML Email</div>
+
+<div id="print_icon">
+<a href="" onclick="myFunction()">
+<img src="Images/ScreenLayoutImages/print_icon.png">
+</a>
+</div>
+
+<div id="logo_image"><a href="https://www.poppulo.com/" target="_blank"><img src="Images/ScreenLayoutImages/logo_image.png"></a></div>
+
+
+</div>
+
+
+
+<div id="side_bar">
+
+<a href="index.html"><div id="home_btn"><img src="Images/Buttons/home_btn_yes.png" onmouseover="this.src='Images/Buttons/home_btn_over.png'" onmouseout="this.src='Images/Buttons/home_btn_yes.png'" onmousedown="this.src='Images/Buttons/home_btn_on.png'" /></div></a>
+
+<div id="about_btn"><a href="about.html"><img id="myImage" src="Images/Buttons/about_btn_off.png"
+onmouseover="this.src='Images/Buttons/about_btn_over.png'"
+onmouseout="this.src='Images/Buttons/about_btn_off.png'"
+onmousedown="this.src='Images/Buttons/about_btn_on.png'" /></a></div>
+
+<div id="lessons_btn"><a href="lessons.html"><img id="myImage" src="Images/Buttons/lessons_btn_off.png"
+onmouseover="this.src='Images/Buttons/lessons_btn_over.png'"
+onmouseout="this.src='Images/Buttons/lessons_btn_off.png'"
+onmousedown="this.src='Images/Buttons/lessons_btn_on.png'" /></a></div>
+
+<div id="glossary_btn"><a href="glossary.html"><img id="myImage" src="Images/Buttons/glossary_btn_off.png"
+onmouseover="this.src='Images/Buttons/glossary_btn_over.png'"
+onmouseout="this.src='Images/Buttons/glossary_btn_off.png'"
+onmousedown="this.src='Images/Buttons/glossary_btn_on.png'" /></a></div>
+
+</div>
+
+<div id="exit_btn" onclick="exitFunction()"><img id="myImage" src="Images/Buttons/exit_btn_yes.png"
+onmouseover="this.src='Images/Buttons/exit_btn_over.png'"
+onmouseout="this.src='Images/Buttons/exit_btn_yes.png'" /></div>
+
+
+<div id="breadcrumb_bar">
+
+<div id="breadcrumb_start"><img src="Images/ScreenLayoutImages/breadcrumb_start.png"></div>
+
+<div id="module_name"><b>MODULE:</b><br/><a href="module3_intro.html">Email Content Management</a></div>
+
+<div id="breadcrumb_between_a"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="unit_name_a"><b>UNIT ONE:</b><br/><a href="unit5_lesson1_slide1.html">Optimising Content for Email</a></div>
+
+<div id="breadcrumb_between2_a"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="lesson_name_a"><b>ASSESSMENT:</b><br/><a href="unit5_assess1.html">Assess your knowledge of 'Optimising Content for Email'</a></div>
+
+
+</div>
+
+<div id="intro_objectives2">
+  <h1>Unit 1: Assessment</h1>
+  <h2>Fill in the blank: Complete the sentence</h2>
+  <br/>
+  <b>Complete the sentence by dragging the correct answer into the blank space below.</b>
+  <br/><br/>
+  <div id="questionText">
+    <table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td style="width: 575px;">Low open rates may negatively affect your sender reputation,
+          so it's important to</td>
+        </tr>
+      </table>
+
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td style="width: 300px;">make it easy for your readers to</td>
+        <td style="width: 80px;">
+
+          <div id="dropWord">
+            <div id="droppable" class="ui-widget-header">
+              <span><div id="innerWord">[Insert Word]</div></span>
+            </div>
+          </div>
+
+        </td>
+        <td>your email.</td>
+      </tr>
+    </table>
+
+</div>
+
+
+
+
+
+
+
+
+<div id="wordResponse">
+  <div id="wordResponseInner">
+    <table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="iconCell"><img src="Quiz/right_response.png" width="95px" height="95px"></td>
+        <td class="textCell">
+    <b>Correct!</b> It's important to have engaged subscribers. Make it
+      easy for readers to unsubscribe if they are no longer interested in
+      receiving your emails. Repeatedly unopened emails or emails marked as
+      spam will negatively impact your sender reputation.
+    </td>
+  </tr>
+</table>
+    </div>
+</div>
+
+
+
+<div id="containerWords">
+  <table width="600px" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="box1">
+  <div id="draggable-nonvalid" class="ui-widget-content">
+    forward
+  </div>
+</td>
+<td class="box2">
+  <div id="draggable-nonvalid" class="ui-widget-content">
+    reply to
+  </div>
+</td>
+<td class="box3">
+  <div id="draggable" class="ui-widget-content">
+  unsubscribe from
+</div>
+</td>
+<td class="box4">
+  <div id="draggable-nonvalid" class="ui-widget-content">
+    delete
+  </div>
+</td></tr></table>
+</div>
+
+
+
+
+
+
+<div id="outerbuttonLinks">
+  <div id="buttonLinks">
+    <a href="unit5_lesson2_slide5.html"><img src="Images/Buttons/prev_btn.jpg"></a>
+      &nbsp;&nbsp;&nbsp;
+    <a href="unit5_assess2.html"><img src="Images/Buttons/next_btn.jpg"></a>
+    </div>
+  </div>
+
+
+<div id="linebox">UNIT 2 ASSESSMENT: SCREEN 1 OF 4
+  <span class="page_bullets" style="font-size: 20px !important; text-align: right;">
+    &nbsp;
+    <img src="Images/ScreenLayoutImages/dot_active.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_unread.jpg">
+  </span>
+</div>
+
+
+
+
+
+</div>
+
+
+<script type="text/javascript">
+
+
+// Print Window Option
+function myFunction() {
+    window.print();
+  }
+
+// Exit Browser Window Option
+function exitFunction() {
+  var txt;
+  var r = confirm("Do you wish to exit this course? \nThis will close the browser window.")
+  if (r == true) {
+      txt = "You pressed OK!";
+      window.open('','_parent','');
+      window.close();
+  } else {
+      txt = "You pressed Cancel!";
+  }
+
+}
+
+</script>
+
+
+</body>
+
+</html>

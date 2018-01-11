@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DESIGN AND BUILD FOR HTML EMAIL</title>
+<link rel="stylesheet" type="text/css" href="stylesheet_mod2.css">
+
+<link rel="stylesheet" type="text/css" href="animate.css">
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+
+
+<div id="header_bar">
+
+
+<div id="title_icon"><a href="index.html"><img src="Images/ScreenLayoutImages/title_icon.png"></a></div>
+
+<div id="title_text">Design And Build For HTML Email</div>
+
+<div id="download_icon">
+  <a href="Downloads/LessonScreens/U4_L4_S7.jpg" download>
+  <img src="Images/ScreenLayoutImages/download_icon.png">
+</a>
+</div>
+
+<div id="print_icon">
+<a href="" onclick="myFunction()">
+<img src="Images/ScreenLayoutImages/print_icon.png">
+</a>
+</div>
+
+<div id="logo_image"><img src="Images/ScreenLayoutImages/logo_image.png"></div>
+
+
+</div>
+
+
+
+<div id="side_bar">
+
+<a href="index.html"><div id="home_btn"><img src="Images/Buttons/home_btn_yes.png" onmouseover="this.src='Images/Buttons/home_btn_over.png'" onmouseout="this.src='Images/Buttons/home_btn_yes.png'" onmousedown="this.src='Images/Buttons/home_btn_on.png'" /></div></a>
+
+<div id="about_btn"><a href="about.html"><img id="myImage" src="Images/Buttons/about_btn_off.png"
+onmouseover="this.src='Images/Buttons/about_btn_over.png'"
+onmouseout="this.src='Images/Buttons/about_btn_off.png'"
+onmousedown="this.src='Images/Buttons/about_btn_on.png'" /></a></div>
+
+<div id="lessons_btn"><a href="lessons.html"><img id="myImage" src="Images/Buttons/lessons_btn_off.png"
+onmouseover="this.src='Images/Buttons/lessons_btn_over.png'"
+onmouseout="this.src='Images/Buttons/lessons_btn_off.png'"
+onmousedown="this.src='Images/Buttons/lessons_btn_on.png'" /></a></div>
+
+<div id="glossary_btn"><a href="glossary.html"><img id="myImage" src="Images/Buttons/glossary_btn_off.png"
+onmouseover="this.src='Images/Buttons/glossary_btn_over.png'"
+onmouseout="this.src='Images/Buttons/glossary_btn_off.png'"
+onmousedown="this.src='Images/Buttons/glossary_btn_on.png'" /></a></div>
+
+</div>
+
+<div id="exit_btn" onclick="exitFunction()"><img id="myImage" src="Images/Buttons/exit_btn_yes.png"
+onmouseover="this.src='Images/Buttons/exit_btn_over.png'"
+onmouseout="this.src='Images/Buttons/exit_btn_yes.png'" /></div>
+
+
+<div id="breadcrumb_bar">
+
+<div id="breadcrumb_start"><img src="Images/ScreenLayoutImages/breadcrumb_start.png"></div>
+
+<div id="module_name"><b>MODULE:</b><br/><a href="module2_intro.html">Design Guidelines</a></div>
+
+<div id="breadcrumb_between"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="unit_name"><b>UNIT TWO:</b><br/><a href="unit4_lesson1_slide1.html">Email Design for Mobile</a></div>
+
+<div id="breadcrumb_between2"><img src="Images/ScreenLayoutImages/breadcrumb_between.png"></div>
+
+<div id="lesson_name"><b>LESSON FOUR:</b><br/><a href="unit4_lesson4_slide1.html">Media Queries and Breakpoints</a></div>
+
+</div>
+
+<div id="intro_home">
+  <h1>Media Queries and Breakpoints</h1>
+  <h2>Common responsive CSS for email</h2>
+<br/>
+<div id="startBox1" class="hover9" onmouseover="hover1Box()">
+  <table id="mediaqueries" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="cell1">
+<b>ORIGINAL DESKTOP VIEW</b>
+</td>
+<td class="cell2">Hover your mouse here to see the desktop view</td>
+</tr>
+</table>
+</div>
+
+  <div id="startBox2" class="hover7" onmouseover="hover2Box()">
+    <table id="mediaqueries" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="cell1">
+<b>CSS TO STACK COLUMNS:</b><br/>LEFT COLUMN ON TOP
+</td>
+<td class="cell2">
+#containerTable .cell1, <br/>#containerTable .cell2 &#123;<br/>
+&nbsp; &nbsp; &nbsp; &nbsp;width:auto !important;<br/>
+&nbsp; &nbsp; &nbsp; &nbsp;display:block !important;<br/>
+&#125;
+</td>
+</tr>
+</table>
+
+</div>
+
+<div id="startBox3" class="hover8" onmouseover="hover3Box()">
+  <table id="mediaqueries" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td class="cell1">
+<b>CSS TO STACK COLUMNS:</b> <br/>RIGHT COLUMN ON TOP
+</td>
+<td class="cell2">
+#containerTable .cell1 &#123;<br/>
+&nbsp; &nbsp; &nbsp; &nbsp;width:100% !important;<br/>
+&nbsp; &nbsp; &nbsp; &nbsp;display:table-footer-group !important;<br/>
+&#125;<br/>
+<br/>
+#containerTable .cell2 &#123;<br/>
+&nbsp; &nbsp; &nbsp; &nbsp;width:100% !important;<br/>
+&nbsp; &nbsp; &nbsp; &nbsp;display:table-header-group !important;<br/>
+&#125;
+</td>
+</tr>
+</table>
+</div>
+<br/>
+
+
+
+<div id="buttonLinks">
+  <a href="unit4_lesson4_slide6.html"><img src="Images/Buttons/prev_btn.jpg"></a>
+    &nbsp;&nbsp;&nbsp;
+  <a href="unit4_assess1.html"><img src="Images/Buttons/assessment_btn.jpg"></a>
+  </div>
+
+
+<div id="linebox">LESSON 4: SCREEN 7 OF 7
+  <span class="page_bullets" style="font-size: 20px !important; text-align: right;">
+    &nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_read.jpg">&nbsp;
+    <img src="Images/ScreenLayoutImages/dot_active.jpg">
+  </span>
+</div>
+
+
+
+</div>
+
+<div id="imgbox7"><img src="Images/LessonContent/media_query_example_stack.png"></div>
+
+<div id="imgbox8"><img src="Images/LessonContent/media_query_example_stack01.png"></div>
+
+<div id="imgbox9"><img src="Images/LessonContent/media_query_example_stack02.png"></div>
+
+
+<script type="text/javascript">
+
+var imgContainer = document.getElementById("imgbox7");
+var imgContainer1 = document.getElementById("imgbox8");
+var imgContainer2 = document.getElementById("imgbox9");
+var startBox1 = document.getElementById("startBox1");
+var startBox2 = document.getElementById("startBox2");
+var startBox3 = document.getElementById("startBox3");
+
+startBox1.style.backgroundColor = "#18E5C9";
+startBox2.style.backgroundColor = "#FFFFFF";
+startBox3.style.backgroundColor = "#FFFFFF";
+
+imgContainer.style.display="block";
+imgContainer1.style.display="none";
+imgContainer2.style.display="none";
+
+function hover1Box() {
+   startBox1.style.backgroundColor = "#18E5C9";
+   startBox2.style.backgroundColor = "#FFFFFF";
+   startBox3.style.backgroundColor = "#FFFFFF";
+   imgContainer1.style.display="none";
+   imgContainer.style.display="block";
+   imgContainer2.style.display="none";
+}
+
+function hover2Box() {
+   startBox2.style.backgroundColor = "#18E5C9";
+   startBox1.style.backgroundColor = "#FFFFFF";
+   startBox3.style.backgroundColor = "#FFFFFF";
+   imgContainer2.style.display="none";
+   imgContainer.style.display="none";
+   imgContainer1.style.display="block";
+}
+
+function hover3Box() {
+   startBox3.style.backgroundColor = "#18E5C9";
+   startBox1.style.backgroundColor = "#FFFFFF";
+   startBox2.style.backgroundColor = "#FFFFFF";
+   imgContainer2.style.display="block";
+   imgContainer.style.display="none";
+   imgContainer1.style.display="none";
+}
+
+</script>
+
+</body>
+
+
+</html>

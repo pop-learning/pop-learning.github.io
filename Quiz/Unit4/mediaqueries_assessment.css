@@ -1,0 +1,37 @@
+[#-- NEWSLETTER RESPONSIVE STYLES --]
+
+@media only screen and (max-width: 599px) {
+
+#masthead img{
+width:100% !important;
+height:inherit !important;
+max-width: 650px !important;
+}
+
+.logo img{
+max-width: 100% !important;
+height:inherit !important;
+}
+
+/* Stacking 2 or 3 column template layout - stack the left column on top, followed by the main column (with the right column on the bottom if required for a 3 column layout) */
+#left, #main{
+width:auto !important;
+display:block !important;
+}
+
+/* Stacking 2 column template layout - stack the main column on top, followed by the left column */
+/*
+#left{
+width:100% !important;
+display:table-footer-group !important;
+}
+#main{
+width:100% !important;
+display:table-header-group !important;
+}
+
+*/
+
+
+}
+[#-- CLOSE RESPONSIVE STYLES --]
